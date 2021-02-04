@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    margin: 0; /*só para aproximar o texto da margem*/
+    display: flex;
+    align-items: center;
+    justify-content: center; /*centralizar horiz*/
+    min-height: 100vh;
+
+}
+
+main {
+    background-color: white ;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /*para fazer as bordas na bottom */
+}
+
+section {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+/* para a row ocupar a row inteira*/
+.row > section {
+    flex:1;
+}
+
+section.cyan {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+} 
+
+section.cyan-light {
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+}
+
+h2 { 
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.yellow-text {
+    color: hsl(71, 73%, 54%);
+}
+
+p {
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 5px;
+}
+
+.big {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.faded {
+    opacity: 70%;
+}
+
+.full {
+    color: white;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    font-family: 'Karla', sans-serif;
+    color:white;
+    border: 0;
+    padding: 10px 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    opacity: 70%;
+}
+
+ul li {
+    line-height: 20px;
+}
+@media (max-width:680px) {
+    .row {
+        flex-direction: column;
+    }
+}
